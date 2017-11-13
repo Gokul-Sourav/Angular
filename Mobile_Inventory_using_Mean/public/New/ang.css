@@ -1,0 +1,321 @@
+.shop {
+  display: block;
+  width: 1200px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 10px 17px;
+  -webkit-box-shadow: 1px 1px 1px 1px ;
+}
+.shopmt {
+  display: block;
+  width: 1000px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 10px 17px;
+  -webkit-box-shadow: 1px 1px 1px 1px ;
+}
+.shopping {
+  display: block;
+  width: 900px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 10px 17px;
+  -webkit-box-shadow: 1px 1px 1px 1px ;
+}
+.prod{
+  display: -webkit-inline-box;
+width: 229px;
+height:223px;
+background: #fff;
+margin-left: 43px;
+margin-top: 31px;
+padding: 10px 17px;
+  -webkit-box-shadow: 1px 1px 1px 1px ;
+}
+#popup{
+visibility:hidden;
+ display:none;
+ width:30%;
+ background-color:#BDBDBD;
+ position:fixed;
+ left:35%;
+ top:30%;
+ border-radius:10px;
+ border:2px solid grey;
+ box-shadow:0px 0px 10px 0px grey;
+ font-family:helvetica;
+}
+
+.proceed{
+position: absolute;
+    right: 10px;
+    top: 5px;
+    color: tomato;
+    background: content-box;
+}
+.cancel{
+    vertical-align: middle;
+    height: 25px;
+    cursor: pointer;
+    width: 25px;
+}
+.h1, h1 {
+    font-size: 1.5rem;
+    color: brown;
+}
+.tb{
+margin: 0 auto;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+.tb thead{
+cursor: pointer;
+}
+.tb thead tr th {
+  font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;
+}
+.tb thead tr th span {
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+.tb tbody tr{
+    border-bottom: 1px;
+    border-bottom-color: gainsboro;
+    border-bottom-style: solid;
+}
+.tb tbody tr:last-child {
+    border-bottom: none;
+}
+.tb tbody tr td {
+  text-align: left;
+  padding: 12px 30px;
+  padding-left: 42px;
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+.wid{
+max-width:50px;
+word-wrap: break-word;
+}
+
+.quant{
+    display: flex;
+    color: #212121;
+    -webkit-align-items: center;
+	    width: 180px;
+}
+
+.quant-button{
+    width: 28px;
+    height: 28px;
+    background: yellowgreen;
+display: inline-block;
+    border: 1px solid #c2c2c2;
+    cursor: pointer;
+    position:left;
+    font-size: 16px;
+    border-radius: 50%;
+    padding-top: 1px;
+    line-height: 1;
+}
+
+.quant-text{
+    border: none;
+    width: 15%;
+    font-size: 14px;
+    font-weight: 500;
+    vertical-align: middle;
+    text-align: center
+}
+.but2{
+  float: right;
+cursor: pointer;
+    text-transform: uppercase;
+    margin-right: 362px;
+    background-color: orangered;
+        color: black;
+    font-weight: bold;
+
+}
+.but1{
+  cursor: pointer;
+      text-transform: uppercase;
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      margin-left: 428px;
+      width: 258px;
+      height: 32px;
+}
+.txt{
+ float: right;
+ margin-right: 362px;
+    width: 194px;
+    border: none;
+border-bottom-style: groove;
+    border-bottom-color: lavenderblush;
+}
+.chk{
+float: right;
+cursor: pointer;
+text-transform: uppercase;
+    background-color: white;
+        color: black;
+    font-weight: bold;
+        margin-right: -275px;
+    height: 27px;
+}
+.mt{
+    float: right;
+    cursor: pointer;
+    border: none;
+    margin-right: -426px;
+    text-decoration: underline;
+    height: 27px;
+    background-color: white;
+    color: maroon;
+}
+.pincode{
+color:blue;
+        float: left;
+    margin-left: 604px;
+}
+.contents{
+  border: none;
+width: 200px;
+cursor: not-allowed;
+}
+.prods{
+  position:absolute;
+    top: 50%;
+    left: 50%;
+    width:16em;
+    height:17em;
+    margin-top: -9em;
+    margin-left: -15em;
+    border: 1px solid #ccc;
+    background-color: deepskyblue;
+}
+.but3{
+  float: right;
+cursor: pointer;
+    text-transform: uppercase;
+    margin-right: 161px;
+    background-color: orangered;
+        color: black;
+    font-weight: bold;
+}
+.but4{
+  float: right;
+  cursor: pointer;
+    text-transform: uppercase;
+    margin-right: 161px;
+    margin-top:-14px;
+    background-color: orangered;
+        color: black;
+    font-weight: bold;
+}
+.close
+{
+  margin-top: -7px;
+    margin-right: -326px;
+}
+.modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    width: 371px;
+    height: 385px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+#loginmodal{
+  margin-left:75px;
+}
+.form-controller{
+    display: block;
+    width: 87%;
+    height: 34px;
+    margin-left: 28px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+#common{
+  margin-left:25px;
+}
+.back
+{
+  background-image: url("download.jpg");
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#title{
+  font-size: xx-large;
+      font-family: cursive;
+      color: #02008b;
+}
+.success{
+  background-color: #5CB707;
+border-color: #4CAE4B;
+margin-left: 30px;
+    color: #fff;
+}
+.shopping-cart {
+  display: inline-block;
+float: right;
+background: url(http://cdn1.iconfinder.com/data/icons/jigsoar-icons/24/_cart.png) no-repeat 0 0;
+width: 26px;
+height: 25px;
+margin-right: 38px;
+border: none;
+
+}
+.update-button{
+  float: right;
+cursor: pointer;
+    text-transform: uppercase;
+    margin-right: 326px;
+    background-color: orangered;
+        color: black;
+    font-weight: bold;
+}
+.qty-button{
+  height: 20px;
+  width: 30px;
+      margin-right: -8px;
+    background: #e94b35;
+    color: #ffffff;
+      display: inline-block;
+      border: 1px solid #c2c2c2;
+    cursor: auto;
+      float: right;
+      font-size: 13px;
+      border-radius: 100%;
+      padding-top: 1px;
+      line-height: 1;
+}
+.chkout-button
+{
+  float: right;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-right: 171px;
+    margin-top: -32px;
+      background-color: darkorange;
+    color: black;
+    font-weight: bold;
+}

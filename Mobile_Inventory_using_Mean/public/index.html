@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="New/ang.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+ </head>
+ <body ng-app="myApp" ng-controller="MainController" style="background-image:url(default.jpg);" >
+   <br>
+  	<div class="container"   ng-hide="extra">
+      <span id="title"><center>Mobile Inventory</center></span>
+      <br><br>
+      <span><button class="shopping-cart" ng-click="myCart()"></button></a> </span>
+      <button class="qty-button" ng-show="symbol">{{ val }}</button>
+      <br><br>
+
+      <button class="but1"  data-target="#loginmodal" data-toggle="modal"> Create A Product</button>
+      <br><br>
+      <div class="prod" ng-repeat="it in products">
+        <span>{{ it.name}}</span>
+        <br><br>
+        <span>{{ it.price | currency :"₹"}}</span>
+        <br><br>
+        <span>{{ it.qty}} Products Available</span>
+        <br><br>
+        <button class="btn btn-danger" ng-click="del(it._id)">Remove</button>
+      <button class="btn btn-primary" data-target="#loginmodal" data-toggle="modal" ng-click="edit(it._id)" >Edit</button>
+      <br><br>
+      <button class="success"  ng-click="addingToCart(it.name,it.price,it.qty,it._id)">Add to cart</button>
+      </div>
+
+    <div class="modal" id="loginmodal" tabindex="-1" >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">x</button>
+          </div>
+      <span id="common">Product Name: </span>
+      <br>
+        <input type="text" class="form-controller" ng-model="item.name">
+      <br><br>
+      <span id="common">Product Price: </span>
+      <br>
+      <input type="text" class="form-controller" onkeypress="return event.charCode >= 48 && event.charCode <= 57" ng-model="item.price">
+      <br><br>
+      <span id="common">Quantity: </span>
+      <br>
+      <input type="number" class="form-controller" ng-model="item.qty">
+      <br>
+     <a href="index.html" > <button class="but3" ng-show="last" ng-click="addingToDb()"> Add </button></a>
+    <br>
+       <a href="index.html" > <button class="but4" ng-hide="last" ng-click="update()"> Update</button></a>
+       <br><br>
+   </div>
+   </div>
+   </div>
+   </div>
+
+
+   <div class="shop"  ng-show="extra">
+ 		<h1>{{ title }}</h1>
+ 		<input class="txt" type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" ng-model="pin" placeholder="Enter the pincode to check "maxlength="6" ng-hide="ppbutton">
+ 	<button class="chk" ng-hide="ppbutton" ng-click="pinCheck()">check</button>
+ 	<button class="mt" ng-hide="ppbutton" ng-click="mt()">Empty cart</button> </a>
+ 		<br>
+ 		<span class="pincode" ng-hide="valid"> {{ pinResult }} {{newdate | date:'mediumDate'}}</span>
+ 		<span class="pincode" ng-hide="invalid">{{ pinResult }} </span>
+ 		<br><br>
+ 		<table class="tb" cellspacing="0" cellpadding="0">
+ 		  <thead>
+ 				<tr>
+ 					<th> <span>Product Name</span> </th>
+ 					<th> <span>Unit Price</span> </th>
+ 					<th> <span>Quantity</span> </th>
+ 					<th> <span>Sub Total</span> </th>
+ 					<th> <span>Remove</span> </th>
+ 				</tr>
+ 				</thead>
+ 				 <tbody>
+       			<tr ng-repeat="st in stocks">
+ 				<td class="wid">{{ st.name }}</td>
+ 					<td>{{ st.price | currency :"₹"}}</td>
+ 					<td> <div class="quant">
+ 						<button class="quant-button" ng-hide="ppbutton" ng-click="minusOne($index)">-</button>
+ 						<span class="quant-text" > {{ temp[$index] }}</span>
+ 						<button class="quant-button" ng-click="addOne($index)" ng-hide="ppbutton">+</button>
+ 						</div>
+ 					</td>
+ 					<td>₹{{st.total }}</td>
+ 					<td><span><img class="cancel" src="button_cancel.png" ng-click="removeStock($index)"></span></td>
+ 				</tr>
+ 				</tbody>
+ 				</table>
+ 				<br>
+ 				<button class="but1" ng-click="extraOne()"> < Add Products</button> </a>
+ 				<button class="update-button" ng-click="buttonEnabling()">Update Cart</button>
+        <a href="index.html"><button class="chkout-button" ng-hide="ppbutton" ng-click="qtyChange()">Check Out > </button></a>
+ 				</div>
+
+		<script type="text/javascript" src="js/Controllers/MainController.js"></script>
+
+  </body>
+  </html>
